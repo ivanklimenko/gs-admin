@@ -1,0 +1,723 @@
+{
+  "pages": {
+    "pages": "Страницы",
+    "login": {
+      "signin": "Войти",
+      "signup": "Зарегистрироваться",
+      "username": "Имя",
+      "password": "Пароль",
+      "remember": "Запомнить пользователя",
+      "forgotPassword": "Забыли пароль",
+      "title": "Авторизация",
+      "noAccount": "Нет аккаунта?"
+    },
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    },
+    "error": {
+      "info": "You may have forgotten to add the {{action}} component to {{resource}} resource.",
+      "404": "Извините, страницы не существует.",
+      "resource404": "Запрашиваемого ресурса не существует",
+      "backHome": "Вернуться"
+    }
+  },
+
+  "buttons": {
+    "create": "Создать",
+    "add": "Добавить",
+    "save": "Сохранить",
+    "logout": "Выйти",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "cancel": "Отменить",
+    "confirm": "Вы уверены?",
+    "filter": "Отфильтровать",
+    "clear": "Очистить",
+    "refresh": "Обновить",
+    "show": "Показать",
+    "undo": "Отменить",
+    "import": "Импорт",
+    "clone": "Копировать",
+    "notAccessTitle": "У вас нет доступа"
+  },
+  "warnWhenUnsavedChanges": "Вы уверены, что хотите покинуть страницу? У вас есть несохраненные изменения.",
+  "notifications": {
+    "success": "Успех",
+    "error": "Ошибка (код ошибки: {{statusCode}})",
+    "undoable": "У вас есть {{seconds}} секунд до отмены",
+    "createSuccess": "Добавление прошло успешно",
+    "createError": "При добавлении сущности {{resource}} произошла ошибка (код: {{statusCode}})",
+    "deleteSuccess": "Успешно удалено",
+    "deleteError": "При удалении сущности {{resource}} произошла ошибка (код: {{statusCode}})",
+    "editSuccess": "Редактирование прошло успешно",
+    "editError": "При редактировании сущности {{resource}} произошла ошибка (код: {{statusCode}})",
+    "importProgress": "Импорт: {{processed}}/{{total}}"
+  },
+  "loading": "Загрузка",
+
+  "files": {
+    "upload": "Нажмите для выбора файла или переместите файл в эту область",
+    "readonly": "Действие недоступно в текущем режиме"
+  },
+  "dashboard": {
+    "title": "Главная"
+  },
+  "directories": {
+    "directories": "Справочники"
+  },
+
+  "textPage": {
+    "textPage": "Текстовые страницы"
+  },
+
+  "aboutUs": {
+    "aboutUs": "О проекте"
+  },
+
+  "markets": {
+    "markets": "Локации",
+    "fields": {
+      "common": "Общая информация",
+      "id": "Id",
+      "title": "Название",
+      "type": {
+        "label": "Тип",
+        "placeholder": "Тип",
+        "food": "Фудкорт",
+        "market": "Рынок",
+        "cafe": "Кафе"
+      },
+      "is_accept_published": "Готов к публикации",
+      "is_published": "Опубликовано",
+      "isForYandex": "Показывать для Яндекса",
+      "isForSber": "Показывать для Сбера",
+      "is_accessed": "Доступен для заказов",
+
+      "fullAddress": "Полный адрес",
+      "coordinate": "Координаты",
+      "work_time": "Время работы",
+      "users": "Пользователи",
+      "delivery": {
+        "label": "Доставка",
+        "type": "Тип доставки",
+        "streets": {
+          "label": "Список улиц",
+          "placeholder": "Введите название"
+        },
+        "zone": {
+          "label": "Список зон доставки",
+          "placeholder": "Введите стоимость"
+        }
+      },
+      "deal": {
+        "label": "Список договоров",
+        "search_placeholder": "Найти договор",
+        "search_button": "Поиск",
+        "name": "Наименование юр.лица",
+        "phone": "Телефон",
+        "period": "Срок договора",
+        "inn": "ИНН",
+        "bic": "БИК",
+        "rs": "p/c",
+        "sale_margin": "Процент с продаж"
+      },
+
+      "image_url": "Логотип",
+      "image_mobile_url": "Фоновое изображение"
+    },
+    "filter": {
+      "title": "",
+      "search": {
+        "label": "Поиск",
+        "placeholder": "ID, Название, etc."
+      },
+      "isActive": {
+        "label": "Опубликовано",
+        "placeholder": "Действующий статус",
+        "true": "Да",
+        "false": "Нет"
+      },
+      "isNetwork": {
+        "label": "Тип локации",
+        "placeholder": "Тип локации",
+        "true": "Да",
+        "false": "Нет"
+      },
+      "type": {
+        "label": "Тип",
+        "placeholder": "Тип",
+        "cafe": "Кафе",
+        "food": "Фудкорт",
+        "market": "Рынок"
+      },
+      "submit": "Отфильтровать"
+    },
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    }
+  },
+
+  "networks": {
+    "networks": "Сети",
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    }
+  },
+
+  "orders": {
+    "orders": "Заказы",
+    "fields": {
+      "state": {
+        "count": "Количество",
+        "outlet": "Точка продажи",
+        "product": "Продукт"
+      }
+    },
+    "filter": {
+      "title": "",
+      "search": {
+        "label": "Поиск",
+        "placeholder": "ID, Номер, etc."
+      },
+      "status": {
+        "label": "Статус",
+        "placeholder": ""
+      },
+      "paid": {
+        "label": "Оплата эквайеру"
+      },
+      "submit": "Отфильтровать"
+    },
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    }
+  },
+
+  "tags": {
+
+    "clone": "Копировать",
+    "create": "Добавить",
+    "edit": "Редактировать",
+
+    "fields": {
+      "title": "Наименование",
+      "image": "Изображение",
+      "isActive": "Активность",
+      "parent": "Родительский тег"
+    },
+
+    "filter": {
+      "title": "Наименование",
+      "search": {
+        "label": "Поиск",
+        "placeholder": "ID, Название, etc."
+      },
+      "submit": "Отфильтровать"
+    },
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    }
+  },
+
+  "outletTags": {
+    "outletTags": "Теги точек продаж",
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Теги точек продаж",
+      "show": "Показать"
+    }
+  },
+
+  "productTags": {
+    "productTags": "Теги товаров",
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Теги товаров",
+      "show": "Показать"
+    }
+  },
+
+  "users": {
+    "users": "Пользователи",
+    "create": "Добавить пользователя",
+    "fields": {
+      "id": "Id",
+      "email": "Email",
+      "password": "Пароль",
+      "repeatPassword": "Повторите пароль",
+      "username": "Логин",
+      "phone": "Телефон",
+      "firstName": "Имя",
+      "lastName": "Фамилия",
+      "markets": "Локации",
+      "networks": "Сети",
+      "outlets": "Точки продаж",
+      "role": {
+        "label": "Роль",
+        "placeholder": "Роль",
+        "none": "--",
+        "admin": "Администратор",
+        "corner": "Корнер",
+        "user": "Пользователь",
+        "content_manager": "Менеджер",
+        "runner": "Раннер"
+      },
+      "isActive": "Активность"
+    },
+    "filter": {
+      "title": "",
+      "search": {
+        "label": "Поиск",
+        "placeholder": "ID, Имя, Email, etc."
+      },
+      "role": {
+        "label": "Роль",
+        "placeholder": "Роль",
+        "admin": "Администратор",
+        "corner": "Корнер",
+        "user": "Пользователь",
+        "content_manager": "Менеджер",
+        "runner": "Раннер"
+      },
+      "submit": "Отфильтровать"
+    },
+    "titles": {
+      "create": "Добавить",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    }
+  },
+
+  "outlets": {
+    "outlets": "Точки продаж",
+    "create": "Добавить точку продаж",
+    "clone": "Создать копию",
+    "fields": {
+      "id": "Id",
+      "title": "Название",
+      "subtitle": "Подзаголовок",
+      "imageLogoWhite": "Логотип",
+      "imageLogoColor": "Логотип (2)",
+      "imageBkgSite": "Фон для десктопа",
+      "imageBkgMobile": "Фон для мобильной версии",
+      "marketId": "Локация",
+      "workTime": "Время работы",
+      "coordinate": "Координаты",
+      "fullAddress": "Полный адрес",
+      "locationType": {
+        "label": "Тип расположения",
+        "placeholder": "Выберите тип",
+        "market": "Рынок/локация",
+        "network": "Сеть",
+        "point": "Самостоятельная точка"
+      },
+      "isReadyForPublishing": "Готов к публикации",
+      "isActive": "Активность",
+      "isForYandex": "Показывать для Яндекса",
+      "isForSber": "Показывать для Сбера",
+      "isOsz": "Самостоятельная точка",
+      "isEnabled": "Доступен для заказов",
+      "users": "Пользователи",
+      "menuCategoryTypes": {
+        "label": "Теги точек продаж",
+        "placeholder": "Поиск по существующим"
+      },
+
+      "chatParameters": {
+        "header": "Параметры чата",
+        "label": "Telegram Chat ID",
+        "button": "Верифицировать"
+      },
+
+      "deliveryOptionsExclude": {
+        "header": "Исключенные параметры доставки"
+      },
+
+      "delivery": {
+        "header": "Параметры доставки",
+        "label": "Доставка",
+        "type": "Тип доставки",
+        "streets": {
+          "label": "Список улиц",
+          "placeholder": "Введите название"
+        },
+        "zone": {
+          "label": "Список зон доставки",
+          "placeholder": "Введите стоимость"
+        }
+      },
+
+      "products": {
+        "header": "Параметры товаров",
+        "link": "Полный список товаров",
+        "minTime": "Минимальное время приготовления",
+        "menuCategories": "Категории меню",
+        "productGroups": "Группы продуктов",
+        "productTags": "Теги продуктов"
+      }
+    },
+    "filter": {
+      "title": "",
+      "search": {
+        "label": "Поиск",
+        "placeholder": "ID, Название, etc."
+      },
+      "isActive": {
+        "label": "Опубликовано",
+        "placeholder": "Действующий статус",
+        "true": "Да",
+        "false": "Нет"
+      },
+      "isEnabled": {
+        "label": "Доступен для заказов",
+        "placeholder": "Действующий статус",
+        "true": "Да",
+        "false": "Нет"
+      },
+      "locationType": {
+        "label": "Тип",
+        "placeholder": "Тип",
+        "market": "Рынок/локация",
+        "network": "Сеть",
+        "point": "Самостоятельная точка"
+      },
+      "submit": "Отфильтровать"
+    },
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    }
+  },
+
+  "contracts": {
+    "contracts": "Договоры",
+    "create": "Добавить договор",
+    "fields": {
+      "id": "Id",
+      "type": "Тип договора",
+      "phone": "Телефон",
+      "number": "Номер договора",
+      "dates": "Сроки договора",
+      "signedAt": "Дата подписания",
+      "expiresAt": "Дата окончания",
+      "person": "Юридическое лицо",
+      "legalAddress": "Юридический адрес",
+      "inn": "ИНН",
+      "psrn": "ОГРН",
+      "checkAccount": "р/с",
+      "bankIdCode": "БИК",
+      "comment": "Комментарий",
+      "table": {
+        "type": "Тип доставки",
+        "commissionOutlet": "Комиссия корнеру",
+        "commissionMarket": "Комиссия маркету"
+      }
+    },
+    "filter": {
+      "title": "",
+      "search": {
+        "label": "Поиск",
+        "placeholder": "ID, Юридическое лицо, Номер, etc."
+      },
+      "type": {
+        "label": "Тип договора",
+        "placeholder": "Тип договора"
+      },
+      "dates": {
+        "label": "Срок договора",
+        "placeholder": "Срок договора"
+      },
+      "submit": "Отфильтровать"
+    },
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    }
+  },
+
+  "timetables": {
+    "timetables": "Расписания",
+    "create": "Добавить пользователя",
+    "fields": {
+      "id": "Id",
+      "title": "Название",
+      "isActive": "Активность",
+      "type": "Тип расписания",
+      "startTime": "Время запуска",
+      "table": {
+        "type": "Тип доставки",
+        "commissionOutlet": "Комиссия корнеру",
+        "commissionMarket": "Комиссия маркету"
+      }
+    },
+    "filter": {
+      "title": "",
+      "search": {
+        "label": "Поиск",
+        "placeholder": "ID, Название, etc."
+      },
+      "type": {
+        "label": "Тип расписания",
+        "placeholder": "Тип расписания"
+      }
+    },
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    }
+  },
+
+  "discounts": {
+    "discounts": "Скидки",
+    "create": "Добавить скидку",
+    "fields": {
+      "id": "Id",
+      "title": "Название",
+      "isActive": "Активность",
+      "isFirstOrder": "Первый заказ",
+      "size": "Размер скидки, %",
+      "minCartSum": "Минимальная сумма корзины",
+      "dateStart": "Дата начала",
+      "dateEnd": "Дата окончания",
+      "datesAt": "Сроки",
+      "datesCartCreated": "Период создания корзины",
+      "markets": "Локации",
+      "users": "Пользователи",
+
+      "market": "Локация",
+      "outlet": "Точка продажи",
+      "category": "Категория",
+      "products": "Продукты",
+      "user": "Пользователь"
+    },
+    "filter": {
+      "title": "",
+      "search": {
+        "label": "Поиск",
+        "placeholder": "ID, Название, etc."
+      },
+      "isActive": {
+        "label": "Опубликовано",
+        "placeholder": "Действующий статус",
+        "true": "Да",
+        "false": "Нет"
+      },
+      "isFirstOrder": {
+        "label": "Первый заказ",
+        "placeholder": "Первый заказ"
+      },
+      "markets": {
+        "label": "Локации",
+        "placeholder": "Локации"
+      },
+      "dateStart": {
+        "label": "Дата начала",
+        "placeholder": "Дата начала"
+      },
+      "dateEnd": {
+        "label": "Дата окончания",
+        "placeholder": "Дата окончания"
+      },
+      "users": {
+        "label": "Пользователи",
+        "placeholder": "Пользователи"
+      }
+    },
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    }
+  },
+
+  "logs": {
+    "logs": "Журнал логов",
+    "fields": {
+      "id": "Id",
+      "title": "Название",
+      "isActive": "Активность",
+      "type": "Тип записи",
+      "sourceOfChange": "Источник изменения",
+      "initiator": "Инициатор",
+      "datetime": "Дата создания"
+    },
+    "filter": {
+      "title": "",
+      "search": {
+        "label": "Поиск",
+        "placeholder": "ID, Юридическое лицо, Номер, etc."
+      },
+      "type": {
+        "label": "Тип записи",
+        "placeholder": "Тип записи"
+      },
+      "sourceOfChange": {
+        "label": "Вид источника",
+        "placeholder": "Вид источника"
+      }
+    },
+    "titles": {
+      "create": "Добавить",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    }
+  },
+
+  "products": {
+    "products": "Товары",
+    "fields": {
+      "id": "ID",
+      "title": "Название",
+      "subtitle": "Подзаголовок",
+      "description": "Описание",
+      "image": "Изображение",
+      "outletId": "Точка продажи",
+      "categoryId": "Категория",
+      "price": "Цена",
+      "priceYandex": "Цена для Яндекса",
+      "packageHeader": "Добавочная цена упаковки",
+      "priceInDeliveryWithSelf": "С собой",
+      "priceInDeliveryToCar": "К машине",
+      "priceInDeliveryToHome": "Домой",
+
+      "weightPriceStep": "Шаг",
+      "weightPriceUnits": "Е.и.",
+
+      "type": {
+        "label": "Вид товара",
+        "placeholder": "Выберите вид",
+        "portion": "Порционный",
+        "weight": "Весовой"
+      },
+      "isActive": "Активность",
+      "isForYandex": "Показывать для Яндекса",
+      "isForSber": "Показывать для Сбера",
+      "isEnabled": "Доступен для заказов",
+      "tags": "Теги",
+      "robots": {
+        "open": "Расписание открытия",
+        "close": "Расписание закрытия"
+      },
+
+
+      "weight": "Вес",
+      "weightOrVolume": "Вес",
+      "minWeight": "Мин.вес",
+      "maxWeight": "Мах.вес",
+      "defaultWeight": "Вес (по умолчанию)",
+      "units": "Е.и.",
+      "stepUnits": "Е.и.",
+      "stepWeight": "Шаг",
+      "weightIncrement": "Шаг",
+      "calories": "Калории",
+      "proteins": "Белки",
+      "fats": "Жиры",
+      "carbohydrates": "Углеводы",
+      "timeForPreparing": "Время приготовления",
+      "expirationDate": "Срок годности",
+
+
+      "delivery": {
+        "header": "Параметры доставки"
+      },
+
+      "deliveryOptionsExclude": {
+        "header": "Исключенные параметры доставки"
+      },
+
+      "options": {
+        "header": "Группы опций",
+
+        "group": {
+          "title": "Название",
+          "description": "Описание",
+          "optionType": "Тип опций",
+          "priceType": "Тип цены",
+          "optionCount": "Количество выбранных опций",
+          "maxSum": "Максимальная цена",
+          "isActive": "Активность",
+          "isRequired": "Обязательное",
+          "isEnabled": "Доступен для заказов"
+        },
+        "option": {
+          "title": "Название",
+          "price": "Цена",
+          "isActive": "Активность",
+          "isEnabled": "Доступен для заказов"
+        },
+
+
+        "titles": {
+          "create": "Добавить",
+          "edit": "Редактировать",
+          "list": "Список",
+          "show": "Показать"
+        }
+      }
+    },
+
+    "titles": {
+      "create": "Добавить",
+      "clone": "Создать копию",
+      "edit": "Редактировать",
+      "list": "Список",
+      "show": "Показать"
+    }
+  },
+
+  "table": {
+    "actions": "Действия"
+  },
+
+  "actions": {
+    "create": "Добавить",
+    "clone": "Создать копию",
+    "edit": "Редактировать",
+    "list": "Список",
+    "show": "Показать"
+  },
+
+  "enum": {
+    "publish": {
+      "true": "Опубликовано",
+      "false": "Скрыто"
+    }
+  }
+}

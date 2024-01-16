@@ -1,0 +1,49 @@
+{
+    "items":[
+       {
+          "id":"21356",
+          "quantity":3,
+          "price":3000,
+          "modifications":[
+             
+          ],
+          "promos":[
+             
+          ],
+          "name":"Белуга охлажденная, 500+"
+       }
+    ],
+    "promos":[
+       
+    ],
+    "discriminator":"marketplace",
+    "eatsId":"231124-0000000000",
+    "platform":"YE",
+    "restaurantId":"1",
+    "deliveryInfo":{
+       "clientName":"Алексей И.",
+       "phoneNumber":"+74951183830 доб. 000000",
+       "deliveryDate":"2023-11-24T17:28:40.000000+03:00",
+       "deliveryAddress":{
+          "full":"Москва, Мосфильмовская улица, 8, под. А, этаж 42, кв./офис 224",
+          "latitude":"55.723591",
+          "longitude":"37.52726",
+          "region":"Москва",
+          "city":"Москва",
+          "street":"Мосфильмовская улица",
+          "house":"8",
+          "entrance":"А",
+          "floor":"42",
+          "flat":"224"
+       }
+    },
+    "paymentInfo":{
+       "paymentType":"CARD",
+       "itemsCost":9000,
+       "deliveryFee":559,
+       "change":0,
+       "total":9559
+    },
+    "persons":0,
+    "comment":"ТЕСТОВЫЙ ЗАКАЗ!!!!! Не трогать!!!!"
+ }

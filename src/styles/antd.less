@@ -1,0 +1,520 @@
+@import "~antd/lib/style/themes/default.less";
+@import "~antd/dist/antd.less";
+
+@import "uploadArea/style.less";
+@import "markets/style.less";
+@import "login/style.less";
+// There are some major variables below,
+// all less variables could be found in
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// font
+@font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// base variables
+@border-radius-base: 6px;
+
+// colors
+@primary-color: #67be23;
+@error-color: #fa541c;
+@text-color: #626262;
+@icons-color: #ffffff;
+@dark-icons-color: #2a132e;
+
+// sider
+@layout-sider-background: #2a132e;
+@menu-bg: transparent;
+@menu-item-color: #fff;
+@menu-highlight-color: #fff;
+@menu-inline-submenu-bg: transparent;
+@menu-item-active-bg: transparent;
+@menu-item-active-border-width: 0px;
+@layout-trigger-background: rgba(0, 0, 0, 0.5);
+
+//form
+@label-color: @text-color;
+
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+  border-right: 0px;
+}
+
+.ant-select-dropdown {
+  min-width: 120px!important;
+}
+
+.ant-drawer-inline {
+  position: fixed;
+}
+
+.ant-form-item-label > label {
+  font-weight: bold;
+}
+
+.ant-page-header {
+  border-radius: @border-radius-base;
+}
+.ant-menu-submenu-popup > .ant-menu {
+  background-color: #2a132e;
+}
+.ant-menu-tree-arrow {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 10px;
+  color: #fff;
+  transform: translateY(-50%);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.ant-menu-tree-arrow::before,
+.ant-menu-tree-arrow::after {
+  position: absolute;
+  width: 6px;
+  height: 1.5px;
+  background-color: currentcolor;
+  border-radius: 2px;
+  transition: background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  content: "";
+}
+.ant-menu-tree-arrow::before {
+  transform: rotate(45deg) translateY(-2.5px);
+}
+.ant-menu-tree-arrow::after {
+  transform: rotate(-45deg) translateY(2.5px);
+}
+.ant-dropdown-menu-title-content {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.action-page-layout .ant-descriptions-header {
+  margin-bottom: 8px;
+}
+
+.action-page-layout .ant-descriptions-title {
+  color: #626262;
+  font-size: 14px;
+  height: auto;
+}
+
+
+.ant-page-header.action-page-layout {
+  background: transparent;
+}
+
+
+.action-page-layout .ant-spin-container > .ant-card {
+  background: transparent;
+}
+
+.action-page-layout .ant-spin-container > .ant-card > .ant-card-body {
+  padding: 0;
+}
+
+.action-page-layout .ant-spin-container > .ant-card > .ant-card-actions {
+  display: none;
+}
+
+.action-page-layout .ant-descriptions-small .ant-descriptions-row > th, .ant-descriptions-small .ant-descriptions-row > td {
+  padding-bottom: 0;
+}
+
+.action-page-layout .ant-descriptions-small .ant-descriptions-row > th span,
+.action-page-layout .ant-descriptions-small .ant-descriptions-row > td span {
+  width: 100%;
+}
+
+.action-page-layout .ant-descriptions-bordered .ant-descriptions-view > table {
+  table-layout: fixed;
+}
+
+.action-page-layout .ant-descriptions-bordered.ant-descriptions-middle .ant-descriptions-item-label,
+.action-page-layout .ant-descriptions-bordered.ant-descriptions-middle .ant-descriptions-item-content {
+  padding: 10px 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.width-100-pr {
+  width: 100%;
+}
+
+.card-block-with-margin {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.row-with-margin-12 {
+  margin-bottom: 12px;
+}
+
+.block-without-margin {
+  margin-bottom: 0;
+}
+
+.filter-block-without-margin {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .filter-block-without-margin {
+    margin-bottom: 18px;
+  }
+}
+
+
+// form
+
+.required-field .card-title::before,
+.required-field label::before {
+  display: inline-block;
+  margin-right: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+
+.delivery-zone-wrapper {
+  margin-bottom: 12px;
+}
+
+.delivery-zone-wrapper .ant-form-item {
+  margin-bottom: 12px;
+}
+
+.delivery-zone-wrapper .ant-space-item span {
+  margin-right: 0;
+}
+
+// preview image
+
+.table-preview-image .ant-image {
+  height: 100%;
+}
+
+.table-preview-image .ant-image > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+// table buttons
+.action-table-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+.action-table-button .anticon {
+  color: @primary-color;
+}
+.action-table-button.ant-btn-dangerous  .anticon {
+  color: @error-color;
+}
+.action-table-button.ant-btn:hover {
+  background-color: transparent;
+}
+
+.required-group-header::after {
+  display: inline-block;
+  margin-right: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+
+// menu and icons
+
+.table-menu-item {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.table-menu-item .menu-item-icon {
+  color: @primary-color;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.table-menu-item .menu-item-icon.delete-icon {
+  color: @error-color;
+}
+
+.table-dropdown-icon {
+  font-size: 24px;
+}
+
+.table-menu-item a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.readonly-delivery-options-wrapper .ant-btn-primary:hover, .readonly-delivery-options-wrapper .ant-btn-primary:focus {
+  color: #fff;
+  border-color: @primary-color;
+  background: @primary-color;
+}
+
+.preview-entity-title .ant-image-mask-info {
+  width: 22px;
+}
+
+
+// markets
+
+.zones-market-description .zones-market-item.ant-descriptions-item-label {
+  display: none;
+}
+
+.zones-market-description .zones-market-header.ant-descriptions-item-content {
+  display: none;
+}
+
+.zones-market-header {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delivery-zone-wrapper .ant-form-item.ant-form-item-has-error {
+  max-width: 100%;
+}
+
+.delivery-zone-wrapper .ant-form-item-control-input-content {
+  flex: none;
+}
+
+.ant-form-item-explain-error {
+  width: 100%;
+  white-space: break-spaces;
+}
+
+//outlets
+
+.settings-products-card {
+  flex: 1;
+  margin-bottom: 16px;
+}
+.ant-card.settings-products-card .ant-card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// tags
+
+.action-drawer-layout .ant-card-body {
+  padding: 0;
+}
+
+// drawer show
+
+// products
+
+.product-active-switch-container {
+  margin-bottom: 0;
+}
+
+.product-active-switch-container .ant-form-item-row {
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.product-active-switch-container .ant-form-item-row .ant-form-item-control {
+  width: auto;
+  margin-left: 12px;
+}
+
+// order
+
+.order-outlets-card .ant-table-content {
+  overflow: auto hidden;
+}
+
+.card-with-no-padding .ant-card-body {
+  padding: 0;
+}
+
+.card-with-no-padding .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding: 18px 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 0;
+}
+
+.card-with-no-padding .ant-collapse > .ant-collapse-item .ant-collapse-content-box {
+  padding: 24px;
+}
+
+.order-info-card {
+  height: 100%;
+}
+
+.order-info-label {
+  margin-right: 6px;
+}
+.order-info-finally {
+  font-weight: 500;
+  color: @primary-color
+}
+
+
+.order-info-value {
+  font-weight: 500;
+}
+
+.order-indo-additional {
+  font-weight: 300;
+  margin-left: 6px;
+}
+
+.status-waiting {
+  color: #efe41a;
+}
+.status-waiting.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-select.status-waiting:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #efe41a;
+  color: #efe41a;
+}
+
+.status-issued-courier {
+  color: #4B65FF;
+}
+.status-issued-courier.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-select.status-issued-courier:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #4B65FF;
+}
+
+.status-waiting-on-counter {
+  color: #d064ee;
+}
+.status-waiting-on-counter.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-select.status-waiting-on-counter:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #d064ee;
+}
+
+.status-confirmed {
+  color: #FA6D1D;
+}
+.status-confirmed.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-select.status-confirmed:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #FA6D1D;
+}
+
+.status-cooking {
+  color: #FAB11D;
+}
+.status-cooking.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-select.status-cooking:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #FAB11D;
+  color: #9b510f
+}
+
+.status-ready {
+  color: #a2ee64;
+}
+.status-ready.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-select.status-ready:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #a2ee64;
+}
+
+.status-received {
+  color: #023820;
+}
+.status-received.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-select.status-received:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #023820;
+}
+
+.status-refused {
+  color: #ee2a2a;
+}
+.status-refused.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-select.status-refused:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #ee2a2a;
+}
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  box-shadow: 0 0 0 2px rgba(189, 189, 189, 0.2);
+}
+
+.ant-steps-dot.ant-steps:not(.ant-steps-vertical) .ant-steps-item-custom .ant-steps-item-icon {
+  width: 8px;
+}
+
+
+.ant-steps-item-custom.ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon {
+  color: #ffea44;
+}
+.ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+  background: #ffea44;
+}
+
+// robots
+
+.timetables-date-wrapper .ant-form-item.robot-week-day {
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.timetables-date-wrapper .ant-form-item.robot-week-day .ant-form-item-label {
+  padding: 0px 0;
+  margin-right: 12px;
+}
+
+.ant-form-vertical .ant-form-item.robot-week-day .ant-form-item-label > label {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.timetables-date-wrapper {
+
+}
+
+.timetables-date-label {
+  font-weight: bold;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  height: 32px;
+  color: #626262;
+  font-size: 14px;
+}
+
+
+.text-page-info .ant-descriptions-item-label {
+  //width: 175px;
+  //display: flex;
+}
+
+// dashboard
+.ant-progress-circle.ant-progress-status-success .ant-progress-text, .ant-progress-circle .ant-progress-text {
+  color: rgba(190,190,190,0.59)
+}

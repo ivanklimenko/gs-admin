@@ -1,0 +1,138 @@
+
+.action-drawer-layout .ant-upload-list-picture-card-container,
+.action-drawer-layout .ant-upload.ant-upload-select-picture-card {
+  height: 166px;
+  width: 100%;
+}
+
+.action-drawer-layout .ant-upload.ant-upload-select-picture-card {
+  padding: 20px;
+}
+
+
+.action-page-layout .ant-upload-list-picture-card-container,
+.action-page-layout .ant-upload.ant-upload-select-picture-card {
+  height: 166px;
+  width: 100%;
+}
+
+.small-file-container {
+  height: 30px;
+  //width: 80px;
+}
+
+.action-page-layout .ant-upload.ant-upload-select-picture-card > .ant-upload {
+  padding: 8px;
+  flex-direction: column;
+}
+
+.preview-container {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 166px;
+}
+
+.small-file-preview.preview-container {
+  height: 30px;
+  background: none!important;
+
+  display: flex;
+  justify-content: start;
+}
+
+.small-file-preview.preview-container img {
+  //width: 80px;
+
+}
+
+.preview-container:before {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  opacity: 0;
+  transition: all .3s;
+  content: " ";
+}
+
+.preview-container:hover:before {
+  opacity: 1;
+}
+
+.small-file-preview.preview-container:before {
+  display: none;
+}
+
+.preview-container .blur-background {
+  background: rgba(255, 255, 255, 0.2); // Make sure this color has an opacity of less than 1
+  backdrop-filter: blur(8px); // This be the blur
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.small-file-preview .blur-background:before {
+  display: none;
+}
+
+
+.preview-image-container {
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.preview-image-container img {
+  max-height: 100%;
+  height: auto;
+  z-index: 1;
+  max-width: 100%;
+}
+
+.preview-action-buttons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  opacity: 0;
+}
+
+.preview-container:hover .preview-action-buttons {
+  opacity: 1;
+}
+
+.preview-action-buttons .button-icon {
+  margin-left: 10px;
+  color: @icons-color;
+}
+
+.small-file-preview .preview-action-buttons {
+  position: relative;
+  opacity: 1;
+  top: 4px;
+  left: 0
+}
+
+.small-file-preview .preview-action-buttons .button-icon {
+  margin-left: 10px;
+  color: @dark-icons-color;
+}
+
+
+.small-file-container .ant-upload-text {
+  display: none;
+}
+
+.small-file-container .ant-upload-list-picture-card-container,
+.small-file-container .ant-upload.ant-upload-select-picture-card {
+  height: 30px;
+  width: 100%;
+}

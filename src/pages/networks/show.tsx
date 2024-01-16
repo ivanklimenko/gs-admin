@@ -1,0 +1,51 @@
+import React, { useState } from "react";
+import { IResourceComponentsProps, usePermissions, useTranslate } from "@pankod/refine-core";
+import {
+  Edit,
+  Form,
+  Input, ListButton, SaveButton,
+  Select, Show, Typography,
+  useForm,
+  useSelect,
+} from "@pankod/refine-antd";
+
+import "react-mde/lib/styles/css/react-mde-all.css";
+import { IMarket } from "interfaces/markets";
+import {EUserRole} from "interfaces/users";
+import {NetworkForm} from "../../components/networks/NetworkForm";
+import {Link} from "react-router-dom";
+import {EAppResources, EPageActions} from "interfaces/common";
+import { AccessWrapperForPage } from "components/accessWrapper";
+
+
+export const NetworkShow: React.FC<IResourceComponentsProps> = () => {
+
+  const { data: permissions } = usePermissions<string>();
+
+  const { formProps, saveButtonProps, queryResult } = useForm<IMarket>({
+    resource: EAppResources.NETWORKS,
+    action: EPageActions.EDIT,
+    dataProviderName: "customProvider"
+  });
+
+
+  return (
+    <AccessWrapperForPage resource={EAppResources.NETWORKS} action={EPageActions.SHOW}>
+      <Show canDelete={permissions?.includes(EUserRole.ADMIN)} pageHeaderProps={{
+        className: "action-page-layout",
+        title: <div className={"flex-column"}>
+          <Typography.Title level={3} style={{margin: 0}}>{formProps.initialValues?.title}</Typography.Title>
+          <Link style={{fontSize: '13px', fontWeight: '300', lineHeight: '20px'}}
+                to={`/outlets?market_id=${formProps.initialValues?.id}`}>Перейти к точам продаж</Link>
+        </div>,
+      }}>
+        <NetworkForm
+          readonlyMode={true}
+          formProps={{
+            ...formProps
+          }}
+        />
+      </Show>
+    </AccessWrapperForPage>
+  );
+};
